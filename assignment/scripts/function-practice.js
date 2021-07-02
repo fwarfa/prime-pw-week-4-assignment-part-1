@@ -6,7 +6,10 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  return 'Hello World!';
+  // added a variable called greeting to be returned
+  let greeting = 'Hello World!';
+  // returning variable 'greeting'
+  return greeting;
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
@@ -15,10 +18,11 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return;
+  let personsName = 'Hello' + " " + name +'!';
+  return personsName;
 }
 // Remember to call the function to test
-
+console.log('Test - should say hello with argument given', helloName('Jason'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
@@ -87,3 +91,4 @@ function sumAll( ) {
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
